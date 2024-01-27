@@ -15,7 +15,7 @@ const booleans3: Array<boolean> = [true, false];
 
 
 // Tuple
-// Array with fixed number of elements and known types, can hold only two elements with types string and number
+// Array with known types, can hold only two elements with types string and number
 const personData: [string, number] = ['John', 20];
 personData[0] = "Alice"
 personData[0] = 20
@@ -28,3 +28,6 @@ personData[1] = true
 // Non-empty array of numbers
 let numbers4: [number, ...number[]] = [1, 2, 3];
 numbers4 = []
+
+// Named tuples allow us to provide context for our values at each index.
+const graph: [x: number, y: number] = [55.2, 41.3];
